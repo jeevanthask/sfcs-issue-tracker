@@ -1,4 +1,5 @@
 import { Card } from "primereact/card";
+import IssueStatusChart from "../IssueStatusChart/IssueStatusChart";
 
 function Dashboard() {
   return (
@@ -22,19 +23,28 @@ function Dashboard() {
               </Card>
             </div>
           </div>
+          <div className="row mt-2">
+            <div className="col-md-12">
+              <IssueStatusChart />
+            </div>
+          </div>
         </div>
         <div className="col-md-6">
-          <Card title="Latest Issues">
-            <p>Broken Checkout Button</p>
-            <span className="badge text-bg-primary">In Progress</span>
-            <hr />
-            <p>Payment Refund Request</p>
-            <span className="badge text-bg-danger">Open</span>
-            <hr />
-            <p>Missing User Profile Data</p>
-            <span className="badge text-bg-success">Closed</span>
-            <hr />
-          </Card>
+          <div className="row">
+            <div className="col-md-12">
+              <Card title="Latest Issues">
+                <p>Broken Checkout Button</p>
+                <span className="badge text-bg-primary">In Progress</span>
+                <hr />
+                <p>Payment Refund Request</p>
+                <span className="badge text-bg-danger">Open</span>
+                <hr />
+                <p>Missing User Profile Data</p>
+                <span className="badge text-bg-success">Closed</span>
+                <hr />
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
